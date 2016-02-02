@@ -88,9 +88,9 @@ def human_play():
             human_score += dice
             print(Fore.MAGENTA + 'Your total score is {}'.format(human_score))
         if roll != user_input and not timeup :
-            print(roll + " " + user_input + " " + str(timeup))
+            #If the timer runs out while waiting for user input, then don't want to
+            #print this message. TODO stop waiting for user input when timer runs out.
             print(Fore.BLUE + 'Try typing {} !!'.format(user_input))
-
 
 
 
